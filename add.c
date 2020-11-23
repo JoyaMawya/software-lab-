@@ -1,8 +1,10 @@
 # include
 int main(){
-    char name [30];
-    printf("your name");
-    gets (name);
-    printf("hello,|%s", name);
-    return 0;
+    int factorial (int n){
+        if(n ==0) return 1;
+        return n*factorial(n-1);
+    }
+    int main(){
+        printf("%d" factorial(5));
+    }
 }
